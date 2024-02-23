@@ -1,0 +1,12 @@
+if TARGET_RV1126_EASYEAI_NANO
+
+config SYS_BOARD
+	default "nano"
+
+config SYS_VENDOR
+	default "easyeai"
+
+config SYS_CONFIG_NAME
+	default "easyeai-nano"
+
+endif

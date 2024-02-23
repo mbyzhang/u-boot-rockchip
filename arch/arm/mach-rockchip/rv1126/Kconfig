@@ -21,6 +21,9 @@ config TARGET_RV1126_SONOFF_IHOST
 	  It features Wifi, Bluetooth and Zigbee radios that are used by many
 	  smart home devices.
 
+config TARGET_RV1126_EASYEAI_NANO
+	bool "Easy Eai Nano Board"
+
 config SOC_SPECIFIC_OPTIONS # dummy
 	def_bool y
 	select HAS_CUSTOM_SYS_INIT_SP_ADDR
@@ -66,5 +69,6 @@ config TEXT_BASE
 
 source board/edgeble/neural-compute-module-2/Kconfig
 source board/itead/sonoff-ihost/Kconfig
+source board/easyeai/easyeai-nano/Kconfig
 
 endif
